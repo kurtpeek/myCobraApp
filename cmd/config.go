@@ -36,6 +36,6 @@ func init() {
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
 	// configCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
-	configCmd.Flags().StringVar(&deviceUUID, "deviceUUID", "1234", "Device UUID")
-	fmt.Println("deviceUUID in config:", deviceUUID)
+	configCmd.Flags().StringVar(&deviceUUID, "deviceUUID", "configDeviceUUID", "Device UUID")
+	fmt.Println("deviceUUID after config init:", deviceUUID)
 }
